@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar {
+.home-bg {
     background-image: url(./assets/Background.svg);
 }
