@@ -4,8 +4,11 @@ function CardImage() {
     return (
         <section>
             <div className="card-image_text">
-                <h1 className="text-4xl font-bold font-poppins text-center"
-                >About Me</h1>
+                <div className="w-[25rem] h-96 bg-black mt-24">
+                    <div className=" items-center h-full">
+                        <div className="text-white text-3xl font-bold">Card Image</div>
+                    </div>
+                </div>
             </div>
         </section>
     )

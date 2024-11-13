@@ -6,7 +6,7 @@ function Navbar() {
     // Fungsi untuk mendeteksi scroll
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 100) { // Set nilai threshold untuk mengubah navbar
+            if (window.scrollY > 10) { // Set nilai threshold untuk mengubah navbar
                 setIsSidebar(true);
             } else {
                 setIsSidebar(false);
