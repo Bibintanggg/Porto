@@ -6,7 +6,7 @@ function AboutMe() {
         <div id="aboutme" >
             <h1 className="text-4xl font-bold font-poppins text-center"
             >About Me</h1>
-            <div className="flex items-center justify-center gap-24">
+            <div className="flex items-center justify-center gap-96">
                 <CardImage/>
                 <p>Hello World</p>
             </div>

@@ -4,19 +4,19 @@ function Navbar() {
     const [isSidebar, setIsSidebar] = useState(false);
 
     // Fungsi untuk mendeteksi scroll
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 10) { // Set nilai threshold untuk mengubah navbar
-                setIsSidebar(true);
-            } else {
-                setIsSidebar(false);
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.scrollY > 10) { // Set nilai threshold untuk mengubah navbar
+    //             setIsSidebar(true);
+    //         } else {
+    //             setIsSidebar(false);
+    //         }
+    //     };
 
-        window.addEventListener("scroll", handleScroll);
+    //     window.addEventListener("scroll", handleScroll);
 
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, []);
 
     return (
         <nav
