@@ -1,7 +1,6 @@
 import React from "react";
 import Skills from "./Skills";
 import SkillsImage from "./SkillsImage";
-import { defaults } from "autoprefixer";
 
 function TextSkills() {
     return (
