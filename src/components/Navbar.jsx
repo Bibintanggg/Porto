@@ -1,38 +1,47 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import HomeIcon from "/src/assets/Home.svg";
+import MeIcon from "/src/assets/Me.svg"
+import ProjectIcon from "/src/assets/Project.svg"
+import ContactIcon from "/src/assets/Contact.svg"
+import Background from "/src/assets/Background.svg"
 
 function Navbar() {
-    const [isSidebar, setIsSidebar] = useState(false);
-
-    // Fungsi untuk mendeteksi scroll
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY > 10) { // Set nilai threshold untuk mengubah navbar
-    //             setIsSidebar(true);
-    //         } else {
-    //             setIsSidebar(false);
-    //         }
-    //     };
-
-    //     window.addEventListener("scroll", handleScroll);
-
-    //     return () => window.removeEventListener("scroll", handleScroll);
-    // }, []);
-
     return (
-        <nav
-            className={`fixed top-0 z-20 transition-all duration-500 ease-in-out ${
-                isSidebar ? "w-36 h-full bg-white text-black" : "w-full bg-white text-black"
-            }`}
-        >
-            <ul
-                className={`flex ${isSidebar ? "flex-col items-center" : "flex-row justify-center"} 
-                    gap-10 text-center text-lg py-4 font-poppins mt-10 font-medium`}
-            >
-                <li><a href="#home" 
-                onClick={() => setIsSidebar(false)}>Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav className="fixed top-1/2 left-0 transform -translate-y-1/2 w-20 h-96 bg-gray-600 bg-opacity-40 z-auto text-black shadow-md rounded-tr-full rounded-br-full"
+        style={{backgroundImage: `(url(${Background}))`}}>
+            <ul className="flex flex-col items-center justify-center h-full gap-6 font-poppins font-medium">
+                <li>
+                    <a
+                        href="#home"
+                        className="flex flex-col items-center text-black opacity-80"
+                    >
+                        <img src={HomeIcon} alt="Home" className="w-8 h-8 mb-1 hover:opacity-20 transition-opacity duration-150 ease-in-out" />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#about"
+                        className="flex flex-col items-center text-black opacity-80 hover:opacity-20 transition-opacity duration-150 ease-in-out"
+                    >
+                        <img src={MeIcon} alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#project"
+                        className="flex flex-col items-center text-black opacity-80 hover:opacity-20 transition-opacity duration-150 ease-in-out"
+                    >
+                        <img src={ProjectIcon} alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        className="flex flex-col items-center text-black opacity-80 hover:opacity-20 transition-opacity duration-150 ease-in-out"
+                    >
+                        <img src={ContactIcon} />
+                    </a>
+                </li>
             </ul>
         </nav>
     );

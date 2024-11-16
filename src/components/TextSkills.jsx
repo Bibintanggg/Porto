@@ -26,7 +26,7 @@ function TextSkills() {
                             className="w-5 h-5 mt-1"/>
                         <h1>Tools</h1>
                         </div>
-                        <p className="mt-4">Visual Studio Code | Figma | Laragon 
+                        <p className="mt-4 whitespace-">Visual Studio Code | Figma | Laragon 
                             <br /> GIT | GITHUB | Adobe Illustrator | Adobe Photoshop
                          </p>
                     </div>
