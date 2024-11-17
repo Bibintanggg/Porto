@@ -1,9 +1,9 @@
-import ProjectDetail from "../components/ProjectDetail"
+// import ProjectDetail from "../components/ProjectDetail"
 
-function Projects() {
-    return (
-        <ProjectDetail/>
-    )
-}
+// function Projects() {
+//     return (
+//         <ProjectDetail/>
+//     )
+// }
 
-export default Projects;
+// export default Projects;
