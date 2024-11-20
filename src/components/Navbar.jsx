@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <nav>
             <div>
-                <ul className="flex justify-center text-center space-x-10 mt-10 text-2xl font-jakarta 
+                <ul className="flex justify-center text-center space-x-10 mt-10 text-xl font-jakarta 
                 font-medium">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>

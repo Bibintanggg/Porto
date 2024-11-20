@@ -4,7 +4,8 @@ import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Education from './components/Education';
-import Project from './components/Project';
+import Project from './components/Project'; 
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Home />
       <div className="h-[2000vh]">
         <AboutMe />
+        <Project/>
+        <Contact/>
       </div>
     </div>
   );

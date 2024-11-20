@@ -12,7 +12,7 @@ function AboutMe() {
                 <div className="border border-black w-16 mt-1 justify-between mx-auto rounded-full opacity-70"></div>
             </div>
 
-            <div className="flex justify-center mt-10 space-x-10">
+            <div className="flex justify-center mt-12 space-x-10">
                 <div className="w-96 h-96 bg-black"></div>
                 
                 <div className="flex-col flex">
@@ -38,7 +38,7 @@ function AboutMe() {
                     </a>
                 </div>
 
-                <button className="bg-lime- rounded-full font-jakarta  text-lg whitespace-pre w-40 h-10 mt-10 mx-auto">
+                <button className="bg-lime- rounded-full font-jakarta  text-lg whitespace-pre w-40 h-10 mt-10 mx-auto animate-bounce">
                     Discover More !
                 </button>
                 </div>
