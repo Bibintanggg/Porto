@@ -5,7 +5,7 @@ import Background from '/Background.png';
 function Home() {
     return (
         <section
-            className="relative flex flex-col items-center justify-center h-screen text-center px-6 pt-20"
+            className="relative flex flex-col items-center justify-center h-screen text-center px-6 pt-2"
             id="home"
             style={{
                 backgroundImage: `url(${Background})`,
