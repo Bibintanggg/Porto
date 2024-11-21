@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import InstagramIcon from '../assets/Instagram.svg';
 import LinkedinIcon from '../assets/Linkedin.svg';
 import TwitterIcon from '../assets/Twitter.svg';
 
+
 function AboutMe() {
+    const navigate = useNavigate()
+    
     return (
         <section>
             <div>
@@ -38,7 +42,8 @@ function AboutMe() {
                     </a>
                 </div>
 
-                <button className="bg-lime- rounded-full font-jakarta  text-lg whitespace-pre w-40 h-10 mt-10 mx-auto animate-bounce">
+                <button className="bg-lime- rounded-full font-jakarta  text-lg whitespace-pre w-40 h-10 mt-10 mx-auto animate-bounce"
+                onClick={() => navigate('/discover')}>
                     Discover More !
                 </button>
                 </div>
